@@ -1,0 +1,2 @@
+#This code is for use by WeMos D1 mini ESP8266.
+#It gathers data by evaluating the disturbance around its 3-axis gyroscope.
