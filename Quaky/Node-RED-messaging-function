@@ -1,0 +1,24 @@
+msg.payload = (Math.random() * 10).toFixed(2);
+if (msg.payload <= 2.5)
+{var quake ="The quake is " + msg.payload + " Richter." + " Its not felt but
+recorded.";}
+if (msg.payload >2.5 && msg.payload <= 5.4)
+{var quake ="The quake is " + msg.payload + " Richter." + " Its felt but
+causes minor damage.";}
+if (msg.payload >= 5.5 && msg.payload <= 6.0)
+{var quake ="The quake is " + msg.payload + " Richter." + " Slight damage
+no cause for worry.";}
+if (msg.payload >= 6.1 && msg.payload <= 6.9)
+{var quake ="The quake is " + msg.payload + " Richter." + " May cause
+serious damage.Evacuation is advised.";}
+if (msg.payload >= 7.0 && msg.payload <= 7.9)
+{var quake ="The quake is " + msg.payload + " Richter." + " Major
+damage.Evacuation is mandatory.";}
+if (msg.payload >= 8.0 && msg.payload <=18.3)
+{var quake ="The quake is " + msg.payload + " Richter." + " Immense
+damage.Dinosaurs are gone and most of the earth.";}
+if (msg.payload >= 18.4)
+{var quake ="The quake is " + msg.payload + " Richter." + " Apocalyptic
+event sit back and enjoy what you have left.";}
+msg.payload=quake;
+return msg;
